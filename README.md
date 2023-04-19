@@ -42,27 +42,16 @@ Additional setup MYSQL need to be done:
 ```
 * use guacamole_db database  
 ```
- mysql> use guacamole_db
-Database changed
-mysql> show databases;
-+--------------------+
-| Database           |
-+--------------------+
-| guacamole_db       |
-| information_schema |
-| mysql              |
-| performance_schema |
-| sys                |
-+--------------------+
-5 rows in set (0.00 sec)
+use guacamole_db;
 ```
+``` 
+show databases;
+
+```
+
 
 * Execute file *sql  
 ```
-mysql> source 01-initdb.sql
-mysql> source 01-initdb.sql
-Query OK, 0 rows affected, 5 warnings (0.12 sec)
-Query OK, 0 rows affected, 6 warnings (0.07 sec)
-Query OK, 0 rows affected, 2 warnings (0.04 sec)
-Query OK, 0 rows affected, 3 warnings (0.05 sec)
-````
+source 01-initdb.sql
+```
+
