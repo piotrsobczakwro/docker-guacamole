@@ -11,6 +11,9 @@
 http://<IP>:8080/guacamole/#/
 
 
+**Username**:guacadmin; 
+**Password**: guacadmin
+
 ## First login after deploy:
 
 When access to that site: 
