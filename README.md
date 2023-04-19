@@ -39,6 +39,7 @@ Additional setup MYSQL need to be done:
 * Login to root  
 ```
  mysql -u root -p
+```
 * use guacamole_db database  
 ```
  mysql> use guacamole_db
