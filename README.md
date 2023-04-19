@@ -34,12 +34,12 @@ Additional setup MYSQL need to be done:
 
 * copy sql file to path 
 ```cp 01-initdb.sql my-db/```
-* login to MySQL container
+* login to MySQL container  
 ```docker exec -it da8993cb1b76 bash```
-* Login to root 
+* Login to root  
 ```
  mysql -u root -p
-* use guacamole_db database
+* use guacamole_db database  
 ```
  mysql> use guacamole_db
 Database changed
@@ -56,7 +56,7 @@ mysql> show databases;
 5 rows in set (0.00 sec)
 ```
 
-* Execute file *sql
+* Execute file *sql  
 ```
 mysql> source 01-initdb.sql
 mysql> source 01-initdb.sql
