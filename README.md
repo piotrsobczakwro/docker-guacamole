@@ -30,14 +30,17 @@ When access to that site:
 
 
  
+Additional setup MYSQL need to be done:
 
+* copy sql file to path 
 ```cp 01-initdb.sql my-db/```
-
+* login to MySQL container
 ```docker exec -it da8993cb1b76 bash```
-
+* Login to root 
 ```
  mysql -u root -p
- 
+* use guacamole_db database
+```
  mysql> use guacamole_db
 Database changed
 mysql> show databases;
@@ -51,16 +54,14 @@ mysql> show databases;
 | sys                |
 +--------------------+
 5 rows in set (0.00 sec)
+```
 
+* Execute file *sql
+```
 mysql> source 01-initdb.sql
-
-
 mysql> source 01-initdb.sql
 Query OK, 0 rows affected, 5 warnings (0.12 sec)
-
 Query OK, 0 rows affected, 6 warnings (0.07 sec)
-
 Query OK, 0 rows affected, 2 warnings (0.04 sec)
-
 Query OK, 0 rows affected, 3 warnings (0.05 sec)
 ````
